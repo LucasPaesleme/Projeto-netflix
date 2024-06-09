@@ -8,18 +8,34 @@
     <link rel="shortcut icon" href="Assets/FAV_NETFLIX.webp" type="image/x-icon">
 </head>
 <body>
-    <section class="bg-page">
-        <img src="Assets/bg_netflix.webp" alt="imagem com varias series da netflix.">
+    <div class="bg-page">
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/cacfadb7-c017-4318-85e4-7f46da1cae88/6b27d791-2d75-4ed0-9387-a776827fbdf3/BR-pt-20240603-popsignuptwoweeks-perspective_alpha_website_small.jpg" alt="">
         <header class="logo-netflix">
-            <img src="" alt="">
+            <span class="netflix">Netflix</span>
         </header><!---->
         <section class="body">
             <div class="container-login">
-                <h1 class="enter-text">Entrar</h1>
+                <header class="enter-text">Entrar</header>
                 <div class="form-login">
-                </div><!---->
-            </div><!---->
-        </section><!---->
-    </section><!---->
+                    <input type="text" name="mail" placeholder="Email ou número de celular">
+                    <input type="password" name="senha" placeholder="Senha">
+                    <button class="enter">Entrar</button>
+                    <div class="ou">
+                        <p>OU</p>
+                    </div><!--Ou-->
+                    <button class="use-code">Usar um código de acesso</button>
+                    <div class="forget-password">
+                        <a class="forget" href="#">Esqueceu a senha ?</a>
+                    </div><!--forget-password-->
+                    <div class="check-password"><input type="checkbox" name="forget"><p><span class="remember-me">Lembre-se de mim</span></p>
+                    </div><!--check-password-->
+                    <div class="assine-agora"><p><span  class="new-here">Novo aqui?</span><a class="subscribe-now" href="#">Assine agora.</a></p>
+                    </div><!--assine-agora-->
+                </div><!--form-login-->
+                <div class="footer"><p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
+                </div><!--footer-->
+            </div><!--container-login-->
+        </section><!--body-section-->
+    </div><!--bg-page-->
 </body>
 </html>
