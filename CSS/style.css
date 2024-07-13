@@ -13,55 +13,5 @@
 
 /* back-ground */
 
-.bg-page{
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Define a altura da div bg-page */
-    overflow: hidden;
 
-}
-
-.bg-page img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; /* Ajuste a largura conforme necessário */
-    max-width: 400px; /* Define uma largura máxima para a seção */
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo para a sobreposição */
-    padding: 20px;
-    box-sizing: border-box;
-    color: #fff;
-    z-index: 1;
-}
-
-
-/* HEADER */
-
-header.logo-netflix{
-    font-family: 'Netflix',Arial, Helvetica, sans-serif;
-}
-
-
-section.body{
-    display: inline-block;
-
-}
-.container-login{
-
-}
-
-.form-login{
-    justify-content: center;
-    align-items: center;
-}
 
