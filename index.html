@@ -10,38 +10,73 @@
 <body>
     <header>
         <div class="logo">
-            <a href="">
-                <img src="Assets/netflixlogo.png" alt="">
+            <a href="#">
+                <img src="Assets/netflixlogo.png" alt="logo">
             </a>
         </div>
     </header>
-    <section class="container-login">
-        <div class="login-box">
-           <h2>Entrar</h2>
-           <form class="form-login">
-            <div class="input-box">
-                <input
-                required 
-                type="email" 
-                placeholder="E-mail ou número de celular">
-            </div><!--input-box-->
-            <div class="input-box">
-                <input required
-                type="password" 
-                placeholder="Senha">
-            </div><!--input-box-->
-            <div class="btn-entrar">
-                <button class="submmit">Entrar</button>
-            </div><!--btn-entrar-->
-           </form><!--form-login-->
+    <section class="section-login">
+        <div class="container">
+            <div class="login-box">
+                <header><h2>Entrar</h2></header>
+                <form class="form-login">
+                    <div class="input-box">
+                        <input
+                        required 
+                        type="email" 
+                        placeholder="E-mail ou número de celular">
+                    </div><!--input-box-->
+                    <div class="input-box">
+                        <input required
+                        type="password" 
+                        placeholder="Senha">
+                    </div><!--input-box-->
+                    <div class="btn-entrar">
+                        <button class="submmit">Entrar</button>
+                    </div><!--btn-entrar-->
+                    <span class="ou">OU</span><!--OU-->
+                    <div class="btn-cdg-acesso">
+                        <button>Usar um código de acesso</button>
+                    </div><!--btn-cdg-acesso-->
+                    <span class="forget"><a href="#">Esqueceu a senha?</a></span><!--forget-->
+                </form><!--form-login-->
 
-           <div class="suport">
-            <div class="remember">
-                <span><input type="checkbox" name="remember">Lembre-se de mim ?</span>
-                
-            </div>
-           </div>
-        </div><!--login-box-->
+                <div class="suport">
+                        <div class="remember">
+                            <span><input type="checkbox" id="check"></span>
+                            <label for="check">Lembre-se de mim ?</label>
+                        </div><!--remember-->
+                        <div class="novo-aqui">
+                            <h2>Novo por aqui? <a href="">Assine agora</a></h2>
+                        </div>
+                </div><!--suport-->
+                <footer>
+                    <h3>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô <a href="#">Saiba mais.</a> </h3>
+                </footer>
+            </div><!--login-box-->
+        </div><!--container-->
     </section><!--container-section-->
+    <footer class="container-footer">
+        <div class="footer">
+            <h2>Dúvidas? Ligue <a href="tel:0800 591 2876">0800 591 2876</a></h2>
+        </div><!--footer-->
+        <div class="links">
+            <a href="#">Perguntas frequentes</a>
+            <a href="#">Central de Ajuda</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Preferências de Cookies</a>
+            <a href="#">Informações corporativas</a>
+        </div><!--links-->
+        <div class="languages">
+            <select name="Languages" id="Languages">
+                <img src="Assets/language_translator_icon_150921.png" alt="">
+                <option value="Português">Português</option>
+                <option value="Inglês">Inglês</option>
+            </select>
+        </div>
+
+    </footer><!--footer container-->
+
 </body>
 </html>
