@@ -53,6 +53,10 @@ header{
     align-self: center;
 
 }
+
+.Entrar{
+    color: #ffff;
+}
 .container{
     padding: 60px ;
     z-index: 90;
