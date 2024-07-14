@@ -21,15 +21,20 @@
                 <header class="Entrar"><h2>Entrar</h2></header>
                 <form class="form-login">
                     <div class="input-box">
-                        <input
-                        required 
-                        type="email" 
-                        placeholder="E-mail ou número de celular">
+                        <label for="input">
+                            <input
+                            required 
+                            type="email" 
+                            placeholder="E-mail ou número de celular">
+                        </label><!--input-label-->
                     </div><!--input-box-->
                     <div class="input-box">
-                        <input required
-                        type="password" 
-                        placeholder="Senha">
+                        <label for="input">
+                            <input
+                            required 
+                            type="password" 
+                            placeholder="Senha">
+                        </label><!--input-label-->
                     </div><!--input-box-->
                     <div class="btn-entrar">
                         <button class="submmit">Entrar</button>
@@ -44,38 +49,39 @@
                 <div class="suport">
                         <div class="remember">
                             <span><input type="checkbox" id="check"></span>
-                            <label for="check">Lembre-se de mim ?</label>
+                            <label for="check" id="remember">Lembre-se de mim ?</label>
                         </div><!--remember-->
                         <div class="novo-aqui">
                             <h2>Novo por aqui? <a href="">Assine agora</a></h2>
                         </div>
                 </div><!--suport-->
-                <footer>
+                <footer class="footer-form">
                     <h3>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô <a href="#">Saiba mais.</a> </h3>
                 </footer>
             </div><!--login-box-->
         </div><!--container-->
     </section><!--container-section-->
-    <footer class="container-footer">
-        <div class="footer">
-            <h2>Dúvidas? Ligue <a href="tel:0800 591 2876">0800 591 2876</a></h2>
-        </div><!--footer-->
-        <div class="links">
-            <a href="#">Perguntas frequentes</a>
-            <a href="#">Central de Ajuda</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Preferências de Cookies</a>
-            <a href="#">Informações corporativas</a>
-        </div><!--links-->
-        <div class="languages">
-            <select name="Languages" id="Languages">
-                <img src="Assets/language_translator_icon_150921.png" alt="">
-                <option value="Português">Português</option>
-                <option value="Inglês">Inglês</option>
-            </select>
-        </div>
-
+    <footer class="overlay-footer">
+        <div class="container-footer">
+            <div class="footer">
+                <h2>Dúvidas? Ligue <a href="tel:0800 591 2876">0800 591 2876</a></h2>
+            </div><!--footer-->
+            <div class="links">
+                <a href="#">Perguntas frequentes</a>
+                <a href="#">Central de Ajuda</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Preferências de Cookies</a>
+                <a href="#">Informações corporativas</a>
+            </div><!--links-->
+            <div class="languages">
+                <select name="Languages" id="Languages">
+                    <img src="Assets/language_translator_icon_150921.png" alt="">
+                    <option value="Português">Português</option>
+                    <option value="Inglês">Inglês</option>
+                </select>
+            </div>
+        </div><!--overlay-footer-->
     </footer><!--footer container-->
 
 </body>

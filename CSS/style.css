@@ -11,6 +11,15 @@
     font-style: normal;
 }
 
+:root{
+    --white: #ffff;
+    --overlay:rgb(0, 0, 0,.6);
+    --red : #fd0000;
+    --white-opacity: #ffffffa9;
+    --whit-acess-code:#ffffff36;
+    --black-footer:#000;
+}
+
 /* Body */
 
 body{
@@ -25,7 +34,7 @@ body{
 
 body::before{
     content: '';
-    background-color: rgb(0, 0, 0,.6);
+    background-color: var(--overlay);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -36,42 +45,193 @@ body::before{
 
 }
 
+/* LOGO */
+
 .logo img{
     width: 164px;
     padding-left: 5px;
+    margin-left: 11%;
 }
 
+/* HEADER */
 header{
     padding: 18px;
     position: relative;
     z-index: 10;
 }
 
+/* SECTION LOGIN */
 .section-login{
     display: flex;
     justify-content: center;
     align-self: center;
-
+    
 }
 
 .Entrar{
-    color: #ffff;
+    color: var(--white);
+    font-size: 1.4em;
+    margin-left: 12%;
+    margin-top: 3.5em;
 }
-.container{
-    padding: 60px ;
-    z-index: 90;
-    position: relative;
-    max-width: 450px;
-    height: 550px;
-    background-color: rgb(0, 0, 0,.70);
+
+.container input{
+    padding: 1em;
+    margin: 10px;
+    background: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 19%;
+    width: 20em;
+    max-width: 19em;
+}
+
+.container input::placeholder{
+    color: var(--white-opacity);
+    
+}
+
+.btn-entrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-entrar button{
+    padding: 8px;
+    margin: 10px;
+    width: 23.7em;
+    margin-left: 19%;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+span.ou{
+    margin: 10px;
+    font-weight: bold;
+    color: var(--white-opacity);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 19%;
+}
+
+
+.btn-cdg-acesso button{
+    padding: 8px;
+    margin: 10px;
+    width: 19em;
+    margin-left: 19%;
+    background-color: var(--whit-acess-code);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.container{
+    /* padding-top: 1em; */
+    z-index: 90;
+    position: relative;
+    max-width: 440px;
+    height: 45em;
+    background-color: rgb(0, 0, 0,.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;  
+}
+
+span.forget a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 19%;
+    margin-bottom: 15px;
+    
+}
+
+span.forget a:hover{
+    text-decoration: underline;
+    color: var(--white-opacity);
+}
+
+.suport .remember{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -72%;
+}
+
+
+.suport label{
+    margin-left: -11%;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.novo-aqui{
+    margin: 1em;
+    color: var(--white-opacity);
+    font-size: 11px;
+    margin-left: 6.6em;
+}
+
+.novo-aqui a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.novo-aqui a:hover{
+
+    text-decoration: underline;
+}
+
+.footer-form{
+    color: var(--white-opacity);
+    font-size: 11.2px;
+    text-align: center;
+    margin: 2em;
+    margin-left: 4em;
+    
 }
 
 .login-box{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: -13em;
+}
+
+
+/* FOOTER */
+
+
+.overlay-footer{
+    background-color: #00000042;
+    margin-top: 3em;
 
 }
+.container-footer{
+    background-color: var(--black-footer);
+    margin-top: 5em;
+    height: 28vh;
+}
+
+
+
 
 
 
